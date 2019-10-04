@@ -1,3 +1,11 @@
+terraform {
+  required_version = ">= 0.12, < 0.13"
+}
+
+provider "azurerm" {
+  version = "~> 1.34.0"
+}
+
 # Hub RG
 resource "azurerm_resource_group" "hub-rg" {
   name     = "CS-hub-rg"
