@@ -238,6 +238,8 @@ resource "azurerm_public_ip" "hub-pip" {
 /*
 resource "azurerm_public_ip" "wrkgrp1-pip" {
   name                = "wrkgrp1-pip"
+  location            = "${azurerm_resource_group.wrkgrp1-rg.location}"
+  resource_group_name = "${azurerm_resource_group.wrkgrp1-rg.name}"
   allocation_method   = "Dynamic"
 }
 */
