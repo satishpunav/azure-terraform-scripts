@@ -12,7 +12,7 @@ export ARM_SUBSCRIPTION_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 export ARM_CLIENT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 export ARM_CLIENT_SECRET=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 export ARM_TENANT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-export ARM_ENVIRONMENT=usgovernment
+export ARM_ENVIRONMENT=[usgovernment/public/german/china (chose one)]
 ```
 
 Execute terraform plan and apply:
