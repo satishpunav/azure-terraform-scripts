@@ -1,26 +1,3 @@
-## Instructions
-Install Terraform using the [instructions](https://learn.hashicorp.com/terraform/getting-started/install.html) for your platform.
-
-Create a service principal in Azure by running the following command.
-```
-az ad sp create-for-rbac --name terraform-sp
-```
-
-On Mac/Linux set the following environment variables using the commands below with the information provided in the service principal.  Be sure to pick the correct ARM_ENVIRONMENT for the Azure cloud you are targeting.
-```
-export ARM_SUBSCRIPTION_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-export ARM_CLIENT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-export ARM_CLIENT_SECRET=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-export ARM_TENANT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-export ARM_ENVIRONMENT=[usgovernment/public/german/china (chose one)]
-```
-
-Execute terraform plan and apply:
-```
-terraform plan
-terraform apply
-```
-
 ## Example: Hub and Spoke Networking with Linux NVA 
 
 This example provides an Azure Hub and Spoke networking example with 3 vnets.  1 VNet is the hub network and the other 2 vnets are spoke networks.  A Linux VM resides on each network.  The Linux VM in the Hub network provides routing services (NVA) so that the spoke vnets can communicate with one another.
