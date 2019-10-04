@@ -6,7 +6,7 @@ Create a service principal in Azure by running the following command.
 az ad sp create-for-rbac --name terraform-sp
 ```
 
-On Mac/Linux set the following environment variables using the commands:
+On Mac/Linux set the following environment variables using the commands below with the information provided in the service principal.  Be sure to pick the correct ARM_ENVIRONMENT for the Azure cloud you are targeting.
 ```
 export ARM_SUBSCRIPTION_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 export ARM_CLIENT_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
